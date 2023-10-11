@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Balıkesir University - EN Website</title>
+  </head>
+  <body>
+    <header>
+        <a href="index.html" class="logo">Balıkesir University</a>
+      <ul>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="about.html">History</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="bulut.png" id="bulut">
+      <img href="index.html" src="baünlogo.png" id="logo">
+      <img src="cayır.png" id="bina_behind">
+      <img src="baünbina.png" id="bina_front">
+        <h2 id="textcontact">Contact</h2>
+   
+        
+    </section>
+    <div class="sec" id="sec">
+        <h2>Contact</h2>
+        <p>
+            <h2>0266 612 1400</h2>
+            <h2>kimlik@balikesir.edu.tr</h2>
+        </p>
+        <div class="container">
+          <h1>Explore Our Location</h1>
+          <p>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.9064179596453!2d28.004416575967834!3d39.539165071594056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b7a9372525bff5%3A0xe02140dd6e939815!2zQmFsxLFrZXNpciDDnG52LiwgQmFsxLFrZXNpcg!5e0!3m2!1str!2str!4v1696409688903!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </p>
+        </div>
+    <script>
+        let bulut = document.getElementById('bulut');
+        let logo = document.getElementById('logo');
+        let bina_behind = document.getElementById('bina_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let bina_front = document.getElementById('bina_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+          let value = window.scrollY;
+            bulut.style.top = value * 0.25 + 'px';
+            logo.style.top = value * 1.05 + 'px';
+            bina_behind.style.top = value * 0.5 + 'px';
+            bina_front.style.top = value * 0 + 'px';
+            textlogo.style.marginTop = value * 1.5+'px' ;
+            //text.style.marginRight = value * 7+ 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+  </body>
+</html>
